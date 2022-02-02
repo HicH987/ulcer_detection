@@ -15,6 +15,7 @@ using python's librarys:
 
 <h3>Top-Hat filtre</h3>
 <p>The top-hat filter is used to enhance bright objects of interest in a dark background</p>
+
 ![md_2](https://user-images.githubusercontent.com/62667537/152111793-ea7797df-f91b-4400-8bad-87d8fd2710f1.png)
 
 <h3>Bottom(black)-Hat filtre</h3>
