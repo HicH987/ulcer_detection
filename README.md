@@ -69,11 +69,11 @@ using python's librarys:
 
 ## Deployment
 -   all videos are in [ulcer_detection/tree/main/dataset/videos]
--   each video has the name "Endpscopy_<number of the video>.mp4"
--   <number of the video> ∈ [0,4]
+-   each video has the name "Endpscopy_(video's number).mp4"
+-   (video's number) ∈ [0,4]
 
 To launch the detection on a video, open your favorite Terminal and run this commands:
 ```sh
-python detection_on_video.py <number of the video>
+python detection_on_video.py <video's number>
 ```
 
