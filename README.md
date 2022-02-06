@@ -1,16 +1,21 @@
 # Ulcer detection
+
 ## Description
+
 ulcer detection in endoscopy videos using color segmentation with HSV
 using python's librarys:
--   **numpy**
--   **openCV**
--   **matplotlib**: to disply figures in nooebook
--   **scipy.ndimage**: for 3D median
--   **skimage.color**: for rgb2hsv
--   **skimage.morphology**: for disk structured element
+
+- **numpy**
+- **openCV**: bgr2rgb,rgb2gray, morphologics filtres, sub images, add images, findContours, image mean, drawContours
+- **matplotlib**: to disply figures in nooebook
+- **scipy.ndimage**: for 3D median
+- **skimage.color**: for rgb2hsv
+- **skimage.morphology**: for disk structured element
 
 ## Features
+
 ### Ulcer image
+
 ![md_1](https://user-images.githubusercontent.com/62667537/152111578-fc7bc70f-0179-4572-89c1-2ca7bf37c956.png)
 
 <h3>Top-Hat filtre</h3>
@@ -22,7 +27,6 @@ using python's librarys:
 <p>Bottom-Hat filter is used to do the opposite of top-hat, enhance dark objects of interest in a bright background</p>
 
 ![md_3](https://user-images.githubusercontent.com/62667537/152111858-53217e7c-8567-4b65-84c1-cfeb35d1ba46.png)
-
 
 <h3>Combine top-bottom with image</h3>
 <p>
@@ -66,14 +70,14 @@ using python's librarys:
 
 ![md_10](https://user-images.githubusercontent.com/62667537/152111875-4140b37d-9145-4378-b587-49d865893b40.png)
 
-
 ## Deployment
--   all videos are in [ulcer_detection/tree/main/dataset/videos]
--   each video has the name "Endpscopy_(video's number).mp4"
--   (video's number) ∈ [0,4]
+
+- all videos are in [ulcer_detection/dataset/videos]
+- each video has the name "Endpscopy_<number of the video>.mp4"
+- <<number of the video>> ∈ [0,4]
 
 To launch the detection on a video, open your favorite Terminal and run this commands:
-```sh
-python detection_on_video.py <video's number>
-```
 
+```sh
+python detection_on_video.py <number of the video>
+```
