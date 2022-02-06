@@ -81,3 +81,8 @@ To launch the detection on a video, open your favorite Terminal and run this com
 ```sh
 python detection_on_video.py <number of the video>
 ```
+ 
+### Exemple:
+```sh
+python detection_on_video.py 0
+```
